@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrisolsson | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/0f53391a20.js"></script>
+
+<body>
+    <section class="head">
+        <div class="backgroundImg">
+            <section class="navigation">
+                <nav class="navbar">
+                    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                        aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text">
+                            <i class="fas fa fa-align-left"></i>
+                        </span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+            
+            <div class="text">
+                <div class="t-i_container">
+                    <div id="backProfileImg">
+                        <div class="profileImgColor"></div>
+                        <img id="profileImg" src="">
+                    </div>
+                    <div class="text-name">
+                        <h2 class="text-1">CHRIS</h2>
+                        <h2 class="text-2">OLSSON</h2>
+                        <h2 class="text-3">System Developer</h2>
+                    </div>
+                </div>
+            </div>
+            <img id="backImg" src="">
+
+        </div>
+        <script>
+            var WinSize = function () {
+                var w = $(window).width();
+                //Background IMG
+                if (w <= 1920) {
+                    $("#backImg").attr('src', 'assets/img/Code1920.PNG');
+                }
+                if (w <= 1000) {
+                    $("#backImg").attr('src', 'assets/img/Code1080.PNG');
+                }
+                if (w <= 620) {
+                    $("#backImg").attr('src', 'assets/img/CodeMobile.PNG');
+                }
+                //Profile Img
+                if (w => 1240) {
+                    $("#profileImg").attr('src', 'assets/img/asset-1.png')
+                }
+                if(w <= 1239){
+                    $("#profileImg").remove();
+                }
+            };
+            $(document).ready(WinSize);
+            $(window).resize(WinSize);
+        </script>
+    </section>
+
+    <section class="info">
+        <!-- <div class="table-responsive">
+            <div>
+                <div class="about-me">
+                    <h2 class="about-me__h2" style="color:black;font-size: 50px;">About Me: </h2>
+                </div>
+            </div>
+            <div>
+                <div class="horiGraph">
+                    <div id="lang">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div>
+            <div class="flex-50">
+                <div>
+                    <h2>About Me:</h2>
+                    <p>My name is Liam, i'm a system developer student located in Sweden. My main interest is to create programs and websites (mostly backend)</p>
+                </div>
+            </div>
+            <div class="flex-50">
+                <div>
+                    <div class="horiGraph">
+                        <div id="lang">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-proj" class="latest-proj">
+        <h2>Feautured Projects: </h2>
+        <div>
+            <div class="proj-feautures">
+                <img src="assets/img/Code.PNG" id="proj-feautures__img">
+            </div>
+            <div class="proj-feautures">
+                <img src="assets/img/Code.PNG" id="proj-feautures__img">
+            </div>
+            <div class="proj-feautures">
+                <img src="assets/img/Code.PNG" id="proj-feautures__img">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+    </section>
+    <script src="assets/JavaScript/github.js"></script>
+    <script src="assets/JavaScript/horiGraph.js"></script>
+</body>
+
+</html>
