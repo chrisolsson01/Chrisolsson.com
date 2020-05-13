@@ -286,6 +286,21 @@ h1, h2, h3, h4, h5, h6, p {
   text-shadow: 3px 3px 6px #4D4D4D;
 }
 
+.info div:last-child .flex-50 div div img {
+  width: 14rem;
+  margin-left: 20%;
+  border-radius: 40px;
+  float: left;
+  padding-right: 10px;
+}
+
+.info div:last-child .flex-50 div div p {
+  font-size: 35px !important;
+  color: #4d4d4d !important;
+  font-weight: bold;
+  margin-left: 20%;
+}
+
 .info div:last-child .flex-50 div p {
   color: black !important;
   margin-left: 20%;
