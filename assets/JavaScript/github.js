@@ -6,8 +6,9 @@ request.onload = function () {
   var statusHTML2 = "";
   $.each(data, function(i, status) {
     //Graph
-    statusHTML += $('#lang').append('<h3 style="color:black;position:absolute;" id="lang'+ status.id +'">'+status.language+'</h3>');
-  
+    
+    statusHTML += $('#lang').append('<h3 style="color:black;" id="language">'+status.language+'</h3>');
+    // $('#language')
 
 
     //Feauturing projects

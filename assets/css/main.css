@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .info div:last-child .flex-50 div h2:first-child {
   width: 100%;
-  font-size: 3.7rem !important;
+  font-size: 3.5rem !important;
   color: #DE660B !important;
   font-weight: bold;
   margin-left: 15%;
@@ -296,9 +296,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .info div:last-child .flex-50 div div p {
   font-size: 35px !important;
-  color: #4d4d4d !important;
-  font-weight: bold;
+  color: #636363 !important;
+  font-weight: 400;
   margin-left: 20%;
+  text-shadow: 1px 1px 6px black;
 }
 
 .info div:last-child .flex-50 div p {
@@ -307,7 +308,17 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 1.5rem !important;
 }
 
+.info div:last-child .flex-50 div:last-child h2:first-child {
+  width: 100%;
+  font-size: 3.5rem !important;
+  color: #DE660B !important;
+  font-weight: bold;
+  margin-left: 15%;
+  text-shadow: 3px 3px 6px #4D4D4D;
+}
+
 .info div:last-child .flex-50 div:last-child .horiGraph {
+  margin-top: 70px !important;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -317,20 +328,32 @@ h1, h2, h3, h4, h5, h6, p {
   float: right;
   width: auto;
   height: auto;
+  margin-top: 0px !important;
 }
 
-.info div:last-child .flex-50 div:last-child .horiGraph div:first-child div {
-  height: 400px;
+.info div:last-child .flex-50 div:last-child .horiGraph div:first-child div:first-child {
+  height: 270px;
   width: 5px;
   background-color: #707070;
-  position: relative;
+  position: absolute;
   margin-right: 15vw;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .info div:last-child .flex-50 div:last-child .horiGraph div:first-child h3 {
   color: black;
-  position: absolute;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
   margin-left: 10px;
 }
 
@@ -398,6 +421,6 @@ h1, h2, h3, h4, h5, h6, p {
 .footer {
   width: 100%;
   min-height: 500px;
-  max-height: auto;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 /*# sourceMappingURL=main.css.map */
