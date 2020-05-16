@@ -349,25 +349,32 @@ $primaryColor: #DE660B;
                 .horiGraph {
                     margin-top: 70px !important;
                     justify-content: flex-end;
-                    div:first-child{
+                    margin-left: 30vw;
+                    // #left {
+                    //     // float: right;
+                    //     position: absolute;
+                    //     float: left;
+                    //     width: 20px;
+                    //     height: 300px;
+                    //     margin-top: 0px !important;
+                    // }
+                    #lang{
                         float: right;
                         width: auto;
                         height: auto;
                         margin-top: 0px !important;
-                        div:first-child{
+                        #lineHoriGraph{
 
-                            height: 270px;
+                            height: 330px;
                             width: 5px;
                             background-color:#707070;
                             position: absolute;
-                            margin-right: 15vw;
+                            margin-top: 0px;
+                            // margin-right: 15vw;
                             border-radius: 10px;
                             display: flex;
                             flex-wrap: wrap;
                             flex-direction: row;
-                            #language {
-
-                            }
                         }
                         h3{
                             color: black;
@@ -377,6 +384,7 @@ $primaryColor: #DE660B;
                             margin-left: 10px;
 
                         }
+                        
                     }
                 }
             }
