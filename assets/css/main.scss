@@ -396,6 +396,128 @@ $primaryColor: #DE660B;
     }
 }
 
+@media screen and (max-width:1300px){
+    .flex-50{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .info {
+        min-height: 500px;
+        // max-height: auto;
+        width: 100%;
+        background-color: #ffffff;
+        padding-bottom: 40px;
+    
+        div:last-child{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            // justify-content: center;
+            // align-items: center;
+            flex-direction: row;
+            // margin-top: 100px;
+            .flex-50 {
+                justify-content: center;
+                align-items: center;
+                // text-align: center;
+                div{
+                    margin-top: 70px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    height: auto;
+                    h2:first-child {
+                        width: 100%;
+                        font-size: 3.5rem !important;
+                        color: #DE660B !important;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-left: 15%;
+                        text-shadow: 3px 3px 6px #4D4D4D;
+                    }
+                    div {
+                        img {
+                            width: 14rem;
+                            margin-left: 20%;
+                            border-radius: 40px;
+                            float: left;
+                            padding-right: 10px;
+                        }
+    
+                        p {
+                            font-size: 35px !important;
+                            // color: #636363 !important;
+                            font-weight: 400;
+                            // // text-align: center;
+                            margin-left: 20%;
+                            // text-shadow: 1px 1px 6px black;
+                            color: #353535 !important;
+                            font-weight: bold;
+                            // text-align: center;
+                            text-shadow: 3px 3px 6px #808080;
+                        }
+                    }
+                    p{
+                        color: black !important;
+                        margin-left: 20%;
+                        font-size: 1.5rem !important;
+                    }
+                }
+                div:last-child {
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    height: auto;
+                    h2:first-child {
+                        width: 100%;
+                        font-size: 3.5rem !important;
+                        color: #DE660B !important;
+                        font-weight: bold;
+                        text-align: center;
+                        text-shadow: 3px 3px 6px #4D4D4D;
+                        text-align: center;
+                        margin-left: 0px !important;
+                    }
+                    .horiGraph {
+                        margin-top: 70px !important;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        margin-left: 30vw;
+                        #lang{
+                            float: right;
+                            width: auto;
+                            height: auto;
+                            margin-top: 0px !important;
+                            #lineHoriGraph{
+    
+                                height: 330px;
+                                width: 5px;
+                                background-color:#707070;
+                                position: absolute;
+                                margin-top: 0px;
+                                // margin-right: 15vw;
+                                border-radius: 10px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: row;
+                            }
+                            h3{
+                                color: black;
+                                position: relative;
+                                width: 100%;
+                                margin-top: 20px;
+                                margin-left: 10px;
+    
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 //latest-proj
 

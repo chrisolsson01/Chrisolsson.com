@@ -359,6 +359,142 @@ h1, h2, h3, h4, h5, h6, p {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 1300px) {
+  .flex-50 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  .info {
+    min-height: 500px;
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+  }
+  .info div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .info div:last-child .flex-50 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info div:last-child .flex-50 div {
+    margin-top: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    height: auto;
+  }
+  .info div:last-child .flex-50 div h2:first-child {
+    width: 100%;
+    font-size: 3.5rem !important;
+    color: #DE660B !important;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 15%;
+    text-shadow: 3px 3px 6px #4D4D4D;
+  }
+  .info div:last-child .flex-50 div div img {
+    width: 14rem;
+    margin-left: 20%;
+    border-radius: 40px;
+    float: left;
+    padding-right: 10px;
+  }
+  .info div:last-child .flex-50 div div p {
+    font-size: 35px !important;
+    font-weight: 400;
+    margin-left: 20%;
+    color: #353535 !important;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px #808080;
+  }
+  .info div:last-child .flex-50 div p {
+    color: black !important;
+    margin-left: 20%;
+    font-size: 1.5rem !important;
+  }
+  .info div:last-child .flex-50 div:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    height: auto;
+  }
+  .info div:last-child .flex-50 div:last-child h2:first-child {
+    width: 100%;
+    font-size: 3.5rem !important;
+    color: #DE660B !important;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 6px #4D4D4D;
+    text-align: center;
+    margin-left: 0px !important;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph {
+    margin-top: 70px !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: 30vw;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang {
+    float: right;
+    width: auto;
+    height: auto;
+    margin-top: 0px !important;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lineHoriGraph {
+    height: 330px;
+    width: 5px;
+    background-color: #707070;
+    position: absolute;
+    margin-top: 0px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang h3 {
+    color: black;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+}
+
 #latest-proj {
   min-height: 500px;
   width: 100%;
