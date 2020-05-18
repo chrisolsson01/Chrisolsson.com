@@ -323,11 +323,15 @@ $primaryColor: #DE660B;
 
                     p {
                         font-size: 35px !important;
-                        color: #636363 !important;
+                        // color: #636363 !important;
                         font-weight: 400;
-                        // text-align: center;
+                        // // text-align: center;
                         margin-left: 20%;
-                        text-shadow: 1px 1px 6px black;
+                        // text-shadow: 1px 1px 6px black;
+                        color: #353535 !important;
+                        font-weight: bold;
+                        // text-align: center;
+                        text-shadow: 3px 3px 6px #808080;
                     }
                 }
                 p{
@@ -430,7 +434,6 @@ $primaryColor: #DE660B;
                 box-shadow: -7px -10px  #DE660B;
             }
         }
-
         .proj-feautures:nth-child(1){
             margin-top: 20px;
         }
@@ -439,6 +442,12 @@ $primaryColor: #DE660B;
         }
         .proj-feautures:nth-child(3){
             margin-top: 20px;
+        }
+
+        //Hover Effect .proj-feautures
+
+        .proj-feautures:hover{
+            
         }
     }
 }
