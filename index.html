@@ -14,7 +14,7 @@
     <script src="https://use.fontawesome.com/0f53391a20.js"></script>
 
 <body>
-    <section class="head">
+    <section class="head" id="head">
         <div class="backgroundImg">
             <section class="navigation">
                 <nav class="navbar">
@@ -27,15 +27,18 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent1">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#head">Home <span class="sr-only">(current)</span></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#info">About Me</a>
 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="#feautured">Feautured</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -84,7 +87,7 @@
         </script>
     </section>
 
-    <section class="info">
+    <section class="info" id="info">
         <div>
             <div class="flex-50">
                 <div>
@@ -93,11 +96,11 @@
                         <img src="assets/img/asset-1.png">
                         <p>Liam <br>Chris <br>Olsson<br>Lillieroth</p>
                     </div>
-                    <p>
+                    <p id="paragraph">
                         Hi i'm a system developer student located in J&ouml;nk&ouml;ping, Sweden. 
                         My main interest is to create websites , software and 3D models. 
                         The main programming languages i have experience with is C#, PHP, HTML/CSS, JavaScript and some Java.
-                        <br><a href="#">You want to talk?</a>
+                        <br><a href="#contact">You want to talk?</a>
                     </p>
                 </div>
             </div>
@@ -129,16 +132,25 @@
         </div>
     </section>
 
-    <section id="latest-proj" class="latest-proj">
+    <section id="latest-proj" class="latest-proj" id="feautured">
         <h2>Feautured Projects: </h2>
         <div>
             <div class="proj-feautures">
+                <div class="proj-feautures__above">
+                    <h2>School System</h2>
+                </div>
                 <img src="assets/img/Code.PNG" id="proj-feautures__img">
             </div>
             <div class="proj-feautures">
+                <div class="proj-feautures__above">
+                    <h2>Yatzy - Game</h2>
+                </div>
                 <img src="assets/img/Code.PNG" id="proj-feautures__img">
             </div>
             <div class="proj-feautures">
+                <div class="proj-feautures__above">
+                    <h2>LBSLAN.com</h2>
+                </div>
                 <img src="assets/img/Code.PNG" id="proj-feautures__img">
             </div>
         </div>
@@ -146,7 +158,7 @@
 
     <section id="contact" class="contact">
         <div class="container contact-form">
-            <form method="post">
+            <form method="post" action="mailto:liamlillieroth@gmail.com">
                 <h3>Send me a message!</h3>
                <div class="row">
                     <div class="col-md-6">

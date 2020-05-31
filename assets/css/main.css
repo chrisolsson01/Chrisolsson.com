@@ -58,6 +58,27 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.navbar-collapse {
+  -webkit-transition: .4 ease;
+  transition: .4 ease;
+  height: auto;
+  width: auto;
+  background-color: rgba(222, 103, 11, 0.671);
+  -webkit-box-shadow: 3px 3px 6px #4D4D4D;
+          box-shadow: 3px 3px 6px #4D4D4D;
+  color: white;
+}
+
+.navbar-collapse ul li a {
+  color: black;
+  margin-left: 5px;
+}
+
+.navbar-collapse ul li:hover {
+  color: white;
+  background: #DE660B;
+}
+
 @media screen and (min-width: 1240px) {
   .head .backgroundImg {
     position: relative;
@@ -471,6 +492,7 @@ h1, h2, h3, h4, h5, h6, p {
             align-items: center;
     width: 80%;
     height: auto;
+    margin-left: 10%;
   }
   .info div:last-child .flex-50 div h2:first-child {
     width: 100%;
@@ -496,66 +518,111 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: bold;
     text-shadow: 3px 3px 6px #808080;
   }
-  .info div:last-child .flex-50 div p {
+  .info div:last-child .flex-50 div #paragraph:last-child {
     color: black !important;
     margin-left: 20%;
     font-size: 1.5rem !important;
+    text-align: center;
   }
   .info div:last-child .flex-50 div:last-child {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80%;
-    height: auto;
+    margin-left: 0px;
   }
   .info div:last-child .flex-50 div:last-child h2:first-child {
     width: 100%;
     font-size: 3.5rem !important;
     color: #DE660B !important;
     font-weight: bold;
-    text-align: center;
+    margin-left: 0;
     text-shadow: 3px 3px 6px #4D4D4D;
-    text-align: center;
-    margin-left: 0px !important;
-    height: 100px;
   }
   .info div:last-child .flex-50 div:last-child .horiGraph {
     margin-top: 70px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang {
+    width: auto;
+    height: auto;
+    margin-top: 0px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang div:nth-child(odd) {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    height: auto;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang div:nth-child(even) {
+    -ms-flex-preferred-size: 5px;
+        flex-basis: 5px;
+    height: auto;
+    margin-left: 0px;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_first {
+    margin: 0px;
+    position: relative;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_first div {
+    -webkit-transition: 3s;
+    transition: 3s;
+    width: 50px;
+    height: 30px;
+    background-color: #DE660B !important;
+    position: relative;
+    text-align: right;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-left: 30vw;
-  }
-  .info div:last-child .flex-50 div:last-child .horiGraph #lang {
     float: right;
-    width: auto;
-    height: auto;
-    margin-top: 0px !important;
+    clear: right;
+    margin-top: 0px;
+    overflow: hidden;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_first div p {
+    font-size: 20px !important;
+    overflow: hidden;
+    color: white !important;
+    text-align: center;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_first div:nth-child(1) {
+    margin-top: 25px !important;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_first div:nth-child(2) {
+    margin-top: 33px !important;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_first div:nth-child(3) {
+    margin-top: 38px !important;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_first div:nth-child(4) {
+    margin-top: 38px !important;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_first div:nth-child(5) {
+    margin-top: 30px !important;
   }
   .info div:last-child .flex-50 div:last-child .horiGraph #lang #lineHoriGraph {
     height: 330px;
-    width: 5px;
+    width: 5px !important;
     background-color: #707070;
-    position: absolute;
     margin-top: 0px;
     border-radius: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
-  .info div:last-child .flex-50 div:last-child .horiGraph #lang h3 {
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_last {
+    margin: 0px;
+  }
+  .info div:last-child .flex-50 div:last-child .horiGraph #lang #lang_last h3 {
     color: black;
     position: relative;
     width: 100%;
@@ -596,12 +663,16 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 #latest-proj div:last-child .proj-feautures {
   -webkit-box-flex: 33%;
       -ms-flex: 33%;
           flex: 33%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
   max-width: 33%;
   text-align: center;
 }
@@ -612,18 +683,18 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: 10;
   -webkit-box-shadow: -7px -10px  #DE660B;
           box-shadow: -7px -10px  #DE660B;
+  -webkit-transition: .4 ease;
+  transition: .4 ease;
 }
 
-#latest-proj div:last-child .proj-feautures:nth-child(1) {
-  margin-top: 20px;
+#latest-proj div:last-child .proj-feautures .proj-feautures__above {
+  width: 100%;
 }
 
-#latest-proj div:last-child .proj-feautures:nth-child(2) {
-  margin-top: 140px;
-}
-
-#latest-proj div:last-child .proj-feautures:nth-child(3) {
-  margin-top: 20px;
+#latest-proj div:last-child .proj-feautures .proj-feautures__above h2 {
+  color: black;
+  opacity: .8;
+  font-size: 40px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -703,7 +774,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .contact-form h3 {
   margin-bottom: 8%;
-  font-size: 3vw;
+  font-size: 50px;
   margin-top: -10%;
   text-align: center;
   color: #DE660B;
